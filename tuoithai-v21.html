@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator Gestational age</title>
+<meta charset="UTF-8">
+<meta name="author" content="name:Lê Quang Vịnh email:vinh_lequang@yahoo.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Calculator Gestational age">
+<meta name="keywords" content="gestational age,date of delivery,EDD,menstrual period,ultrasound report">
+<link href="./site.css" rel="stylesheet">
+<script type="text/javascript" src="./tuoithai.js"></script>
+</head>
+<body>
+<nav id="nav01"></nav>
+<div id="main">
+<div>
+<h1>Tính tuổi thai (v 2.0)</h1>
+    <span>Theo:
+      <select id="selType" onchange="selType_change();">
+        <option selected="selected" value="0"> kinh cuối </option>
+        <option value="1"> dự sanh </option>
+        <option value="2"> siêu âm lần 1</option>
+        <option value="3"> siêu âm lần 2</option>
+        <option value="4"> siêu âm lần 3</option>
+      </select></span>
+    <span  id="id_tdAge" style="visibility:hidden;white-space:nowrap;" >
+      Thai:
+      <select id="selAgeWeeks1" onchange="selAge1_change();">
+      </select>w
+      <select id="selAgeDays1" onchange="selAge1_change();">
+      </select>d
+    </span>		
+</div>
+<div>
+    Ngày:
+    <select id="selDay1" onchange="selDate1_change();"> 
+      <option selected="selected" value="-1">DD</option>
+    </select>
+    <select id="selMonth1" onchange="selDate1_change();">
+      <option selected="selected" value="-1">MM</option>
+    </select>
+    <select id="selYear1" onchange="selDate1_change();">
+      <option selected="selected" value="-1">YYYY</option>
+    </select>
+</div>
+<div>
+	<button class="button" onclick="cal1_click();">Tuổi thai</button>
+	<button class="button" onclick="cal2_click();">Tuổi thai và các ngày khác</button>
+</div>  
+<table>
+  <tr>
+    <td>        
+      <span>Ngày:</span><br>
+      <select id="selDay2" onchange="selDate2_change();">
+        <option selected="selected" value="-1">DD</option>
+      </select>
+      <select id="selMonth2" onchange="selDate2_change();">
+        <option selected="selected" value="-1">MM</option>
+      </select>
+      <select id="selYear2" onchange="selDate2_change();">
+        <option selected="selected" value="-1">YYYY</option>
+      </select></td>
+		<td><button class="button" onclick="calToAge_click();" >&rarr;</button></td>
+    <td id="tdOutput2"></td>
+  </tr>
+  <tr>
+    <td>
+      <span> Tuổi thai:</span><br>
+      <select id="selAgeWeeks2" onchange="selAge2_change();">	
+      </select>
+      <span>w</span>
+      <select id="selAgeDays2" onchange="selAge2_change();">
+      </select>
+      <span>d</span></td>		
+		<td><button class="button" onclick="calToDate_click()" >&rarr;</button></td>
+    <td id="tdOutput3"> </td>		
+  </tr>
+</table>
+<div>Kết quả:</div>
+<textarea name="outputtext" id="outputtext"  rows="12" readonly></textarea><br />
+<input type="radio" name="radioAppend" value="" onclick="document.getElementById('outputtext').value = '';">Thêm
+<input type="radio" name="radioAppend" value="" onclick="document.getElementById('outputtext').value = '';" checked >Ghi đè<br>
+Ngày tương ứng với tuổi thai(tuần):<br><input name="week_year" type="text" value="12,16,18,22,24,28,32,40"  style="width:100%;"><br>
+<footer id="foot01"></footer>
+</div>
+<script>        	
+document.getElementById("foot01").innerHTML =
+"<p>&copy;  " + new Date().getFullYear() + " vinh_lequang@yahoo.com. All rights reserved.</p>";
+</script>
+<script src="./script.js"></script>
+</body>
+</html>
