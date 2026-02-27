@@ -1,6 +1,6 @@
 body {
     font-family: "Trebuchet MS", Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 36vw;
     background-color: dimgrey; 
     color: #696969;
     padding: 3px;
@@ -10,7 +10,7 @@ h1 {
     font-family: Georgia, serif;
     border-bottom: 3px solid #cc9900;
     color: #996600;
-    font-size: 30px;
+    font-size: 30vw;
 }
 
 #main {
@@ -89,7 +89,7 @@ tr.selected,  th.selected{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 16vw;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -99,7 +99,7 @@ select {
 	padding:2px;
 	border-radius:3px;
   width: auto;
-	font-size: 16px;
+	font-size: 16vw;
 }
 
 textarea#outputtext {

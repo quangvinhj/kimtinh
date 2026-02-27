@@ -5,5 +5,5 @@ document.getElementById("nav01").innerHTML =
 "<li><a href='dichvu.html'>Dịch Vụ</a></li>" +
 "<li><a href='thuoc.html'>Thuốc</a></li>" +
 "<li><a href='taman.html'>Tâm An</a></li>" +
-"<li><a href='tuoithai-v21.html'>Tuổi thai</a></li>" +
+"<li><a href='tuoithai-v30.html'>Tuổi thai</a></li>" +
 "</ul>";
