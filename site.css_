@@ -1,0 +1,110 @@
+* {
+	font-family: Verdana;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+
+body {
+  background-color: dimgrey; 
+  color: #696969;
+  padding: 3px;
+}
+h1 {
+  border-bottom: 3px solid #cc9900;
+  color: #996600;
+	font-size: 1.5em;
+}
+
+#main {
+  padding: 5px;
+  padding-left:  15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+
+ul#menu {
+  padding: 0;
+  margin-bottom: 11px;
+}
+
+ul#menu li {
+  display: inline;
+  margin-right: 3px;
+}
+
+ul#menu li a {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #696969;
+  border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+  color: white;
+  background-color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+td.right {
+	text-align: right;
+}
+
+tr.selected,  th.selected{
+	background: coral
+}
+
+#idSumary tr > *:nth-child(4) {
+	display: none;
+}
+
+.myDiv {
+  border: 5px outset Wheat;
+  background-color: lightblue;    
+  text-align: center;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+select {
+	border:solid 1px #C0C9BF;
+	padding:2px;
+	border-radius:3px;
+  width: auto;
+}
+
+textarea#outputtext {
+  overflow: auto;
+  height: 200px;
+  resize: none; /* Remove this if you want the user to resize the textarea */
+  width: 100%;
+}
+
