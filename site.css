@@ -19,31 +19,41 @@ h1 {
   padding: 5px;
   padding-left:  15px;
   padding-right: 15px;
-  background-color: #ffffff;
+  background-color: #ffffff; 
   border-radius: 0 0 5px 5px;
 }
 
-ul#menu {
+ul {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin-bottom: 11px;
+  overflow: hidden;
+  background-color: #333333;
 }
 
-ul#menu li {
-  display: inline;
-  margin-right: 3px;
+ul li {
+  float: left;
+  border-right:1px solid #bbbbbb;
 }
 
-ul#menu li a {
-  background-color: #ffffff;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #696969;
-  border-radius: 4px 4px 0 0;
+ul li:last-child {
+  border-right: none;
 }
 
-ul#menu li a:hover {
+ul li a {
+  display: block;
   color: white;
-  background-color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #111111;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
 }
 
 table {
