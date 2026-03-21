@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
 <title>Calculator Gestational age</title>
 <meta charset="UTF-8">
 <meta name="author" content="name:Lê Quang Vịnh email:vinh_lequang@yahoo.com">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta name="description" content="Calculator Gestational age">
 <meta name="keywords" content="gestational age,date of delivery,EDD,menstrual period,ultrasound report">
 <link href="./site.css" rel="stylesheet">
@@ -48,7 +51,7 @@
 </div>  
 <div>
 	<button class="button" onclick="cal2_click();">Ngày tương ứng với tuổi thai(tuần)</button>
-	<input name="week_year" type="text" value="12,16,18,22,24,28,32,40">
+	<input name="week_year" type="text" value="12,16,18,22,24,28,32,40" style="width:100%;max-width:200px;font-size:16px;">
 </div>  
 <div>
 <button class="button" onclick="calToAge_click();" >Tuổi thai ứng với ngày:</button>
@@ -66,7 +69,7 @@
 <div>
   <button class="button" onclick="calToDate_click()" >Ngày ứng vơi tuổi thai:</button>
   <select id="selAgeWeeks2" onchange="selAge2_change();"></select><span>w</span>
-  <select id="selAgeDays2" onchange="selAge2_change();"></select><span>d</span></td>		
+  <select id="selAgeDays2" onchange="selAge2_change();"></select><span>d</span>
 </div>
 
 <div>Kết quả:</div>
